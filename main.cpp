@@ -1,0 +1,2 @@
+#include <iostream>
+int main() { system("clear"); int i = 0; bool run = true; while(run == true) { i++; if (i >= 999999999) { run = false; } if (run == false) { system("clear"); std::cout << "Finished!"; std::cin.get(); return 0; } } }
