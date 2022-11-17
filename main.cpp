@@ -18,14 +18,17 @@ void program ()
 }
 
 int main() {
+  std::chrono::steady_clock::time_point t1
+  std::chrono::steady_clock::time_point t2
+  
   using std::chrono::high_resolution_clock;
   using std::chrono::duration_cast;
   using std::chrono::duration;
   using std::chrono::milliseconds;
   
-  std::chrono::steady_clock::time_point t1 = high_resolution_clock::now();
+  t1 = high_resolution_clock::now();
   program();
-  std::chrono::steady_clock::time_point t2 = high_resolution_clock::now();
+  t2 = high_resolution_clock::now();
   duration<double> secs = t2 - t1;
   
   if (run == false)
